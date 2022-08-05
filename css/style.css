@@ -1,0 +1,177 @@
+/*Global css*/
+*{
+margin: 0;
+padding: 0;
+}
+a{
+text-decoration: none;
+}
+ul{
+margin: 0;
+padding: 0;
+}
+.container{
+width: 1140px;
+}
+
+/*headr section css*/
+body{
+font-family: 'Open Sans', sans-serif;
+}
+.topbar{
+width: 100%;
+background-color: #eaefff;
+padding: 10px 0;
+}
+.left-content span{
+color: #fe5c24;
+}
+.topbar a{
+color: #0c3e72;
+}
+.right-content span i{
+color:#fe5c24 ;
+}
+.mainbar{
+	width: 100;
+}
+.container-fluid{
+	--bs-gutter-x: 0 !important;
+}
+
+.book-now{
+	padding: 12px 22px;
+	background-color:#fe5c24 ;
+	border: none;
+	color: white;
+	transition: 0.5s;
+}
+.book-now:hover{
+	background-color:#2493e0 ;
+	transition: 0.5s;
+}
+
+
+/*banner css*/
+.banner{
+	width: 100%;
+	background-image: url(../img/bg-1.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	height: 100vh;
+}
+.banner-content{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+}
+.banner-content h1{
+	font-size: 120px;
+	font-weight: 600;
+	color: white;
+}
+.banner-content p{
+	font-size: 18px;
+	font-weight: 400;
+	color: white;
+}
+.banner-content button{
+	margin-top: 60px;
+	padding:23px 79px ;
+	background-color: #2493e0;
+	color: white;
+	border: none;
+	font-size: 16px;
+	transition: 0.5s;
+
+}
+.banner-content button:hover{
+	background-color:#fe5c24;
+	transition: 0.5s;
+}
+/*Search css*/
+.search{
+	margin-top: -80px;
+}
+.search-box{
+	background-color: white;
+	box-shadow: 0 10px 40px 0 rgba(221,221,221,.3);
+}
+
+.tab-menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px 30px 26px 0;
+
+}
+.tab-item{
+	padding: 30px;
+}
+.form-feild{
+	padding: 12px 14px;
+	
+	color: black;
+	margin-right: 8px;
+}
+.date-box{
+	position: relative;
+}
+.w-21{
+	width: 22%;
+}
+.date-box i{
+	position: absolute;
+	right: 15px;
+	top: 18px;
+}
+
+/*place css*/
+.place{
+	width: 100%;
+}
+.place-text h2{
+	font-size: 45px;
+	color: #0c3e72;
+	padding: 20px 0;
+}
+.place-text p{
+	font-size: 12px;
+	color: #777;
+	padding: 20px 0;
+}
+.place-item-list{
+	position: relative;
+}
+.place-item-content{
+	position: absolute;
+	left: 40px;
+	bottom: 20px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.place-item-list::before{
+	content: '';
+	background-color: #0c3e72;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: 0.5s;
+
+}
+.place-item-list:hover::before{
+	opacity: 0.65;
+	transition: 0.5s;
+}
+.place-item-list:hover .place-item-content{
+	opacity: 1;
+	transform: translateY(-20px);
+	transition: 0.5s;
+}
